@@ -11,7 +11,8 @@ Arbitrage_bot.py
 
 The arbitrage bot has two functions, compare and execution.
 
-Important parameter in this module is, threshold, whichis the minimum % you would like to consider for the purpose of the bot. It is in percentage points and adjust the figure as you would like to. 
+Important parameter in this module is, threshold, whichis the minimum % you would like to consider for the purpose of the bot. It is in percentage points and adjust the figure as you would like to. There is also the variable, upper, which allows you to limit the max premium that you are willing to consider. The default is set at 30% and is there to
+remove many illquid pairs trading at ridiculous premium.
 
 Compare will compare the bid and ask price of every symbol on each exchange and store the result in a dictionary, with the symbol pairing,premium and action needed. 
 
