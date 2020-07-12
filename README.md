@@ -21,12 +21,12 @@ Execution.py
 Execution allows you to customise for which exchange you would like to compare against. The default setting is all 6 exchanges, 
 (Binance, Kucoin,Huobi,Ftx,Okex, Bitfinex). User can adjust the number of exchanges by editing the values in list. 
 
-Market_depth.py
+market_depth.py
 
 Market_depth will run through every pairing with arbitrage opportunities and find the corresponding bid and ask quantity on each exchange. 
 This allows for user to check on the available lidqudity for arbitrage opportunities.
 
-Binance_bot.py
+binance_bot.py
 
 User will have to add in their own public API and private API into the program. 
 
