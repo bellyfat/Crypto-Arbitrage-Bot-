@@ -3,7 +3,7 @@ A crypto Arbitrage Bot that pulls API from Binance, Bitfinex Kraken, Kucoin, Huo
 
 api_bot.py
 
-api_bot.py contains all the function that will request bid ask price from all the different exchanges, from Binance, Bitfinex Kraken, Kucoin, Huobi, Ftx and Okex. 
+api_bot.py contains all the function that will request bid and ask prices from all the different exchanges, from Binance, Bitfinex Kraken, Kucoin, Huobi, Ftx and Okex. 
 
 The api for Kraken is a little slow so I would leave it out for the rest of the project.
 
@@ -11,8 +11,7 @@ Arbitrage_bot.py
 
 The arbitrage bot has two functions, compare and execution.
 
-First, let us talk about threshold. Threshold is the minimum % you would like to consider for the purpose of the bot. It is in percentage points and adjust the figure as
-you would like to. 
+Important parameter in this module is, threshold, whichis the minimum % you would like to consider for the purpose of the bot. It is in percentage points and adjust the figure as you would like to. 
 
 Compare will compare the bid and ask price of every symbol on each exchange and store the result in a dictionary, with the symbol pairing,premium and action needed. 
 
@@ -28,7 +27,7 @@ This allows for user to check on the available lidqudity for arbitrage opportuni
 
 binance_bot.py
 
-User will have to add in their own public API and private API into the program. 
+User will have to add in their own public API and private API keys into the program. 
 
 Binance Bot is a simple trading bot that will market buy and sell based on the result from Market_depth, if the action needed is to buy or sell
-any symbol from Binance. 
+any symbol from Binance. The format can be extended to other exchanges using similar logic. 
