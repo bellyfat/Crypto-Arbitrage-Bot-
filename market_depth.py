@@ -128,7 +128,7 @@ def market_depth(a):
                         ftx_ask_size = ask_ftx[0][1]
                         ftx_ask_quantity = 'Ask_Qty:' + str(ftx_ask_size)
                         key[info] = key[info] + ", " + ftx_ask_quantity
-    print(a)
+    #print(a)
     return a
 
 
@@ -144,6 +144,8 @@ def final_list(answer):
                 diction[each] = arbi_info
                 final_arbi_list.append(diction)
 
-    print(final_arbi_list)
     return final_arbi_list
+
+
+
 #final_list(market_depth(execution(list)))
