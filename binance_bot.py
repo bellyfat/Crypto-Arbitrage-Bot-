@@ -6,10 +6,17 @@ from market_depth import *
 #Generate from Binance
 BinanceKey = {'api_key': '<Your API_KEYS>',
     'api_secret':'<Your API_SECRET>'}
-from binance.client import Client
+#from binance.client import Client
 
 def bot_execution(arbitrage_list):
-    quantity = 100
+    number_of_arbitrage_pairs = len(arbitrage_list)
+    print ("-----------------------------------------")
+    print ("There are ", number_of_arbitrage_pairs,"of arbitrage pairs")
+    for i in arbitrage_list:
+        print(i)
+    print ("-----------------------------------------")
+    
+    quantity = 100 # to be determined 
     for group in arbitrage_list:
         for each in group:
             if "Binance" in each[1]:
